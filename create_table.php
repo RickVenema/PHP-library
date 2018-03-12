@@ -21,9 +21,9 @@
 		$Table->add_Row($row);
 		```
 		
-		When the rows are added, the table can have an ID. To set this ID the __setTitleID() function needs to be called:
+		When the rows are added, the table can have an ID. To set this ID the __setTableID() function needs to be called:
 		``` {php Set ID of table}
-		$Table->__setTitleID("This_is_the_ID");
+		$Table->__setTableID("This_is_the_ID");
 		```
 		
 		As conclusion we can print this created table using __print_object():
@@ -87,7 +87,7 @@
 			
 		}
 		
-		public function __setTitleID($ID){
+		public function __setTableID($ID){
 			/* function to set the ID of the table */
 			$this->start_table = "<table id=". $ID .">";
 		}
